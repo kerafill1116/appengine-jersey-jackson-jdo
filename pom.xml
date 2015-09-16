@@ -18,6 +18,8 @@
 
         <jersey.version>2.21</jersey.version>
         <jackson.version>2.6.1</jackson.version>
+        <objectify.version>5.1.8</objectify.version>
+        <junit.version>4.12</junit.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
@@ -86,6 +88,13 @@
             <version>${jackson.version}</version>
         </dependency>
 
+        <!-- Objectify dependencies -->
+        <dependency>
+            <groupId>com.googlecode.objectify</groupId>
+            <artifactId>objectify</artifactId>
+            <version>${objectify.version}</version>
+        </dependency>
+
         <!-- JDO dependencies -->
         <dependency>
             <groupId>javax.jdo</groupId>
@@ -104,6 +113,12 @@
         </dependency>
 
         <!-- Test Dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-testing</artifactId>
